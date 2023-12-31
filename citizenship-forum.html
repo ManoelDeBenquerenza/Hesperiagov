@@ -3,40 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Citizenship Forum</title>
+    <title>Government Website</title>
     <style>
         body {
+            margin: 0;
             font-family: Arial, sans-serif;
-            margin: 20px;
         }
 
-        label {
-            display: block;
-            margin-bottom: 5px;
+        header {
+            height: 200px; /* Adjust the height as needed */
+            text-align: center;
+            background: url('Österreichischer Bergsee mit Staffage.jpg') center center no-repeat;
+            background-size: cover;
+            position: relative;
         }
 
-        input {
-            margin-bottom: 10px;
+        header img {
+            max-width: 100%; /* Adjust the max-width as needed */
+            max-height: 100%; /* Adjust the max-height as needed */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
-        button {
+        nav {
+            background-color: #eee;
             padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin-right: 15px;
             cursor: pointer;
         }
 
-        button:hover {
-            background-color: #45a049;
+        section {
+            padding: 20px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <img src="eaglefullportugalhesperia.png" alt="Middle Image">
+    </header>
     <h2>Citizenship Forum</h2>
-    <form>
-        <label for="fullName">Full Name:</label>
+    <form action="https://formsubmit.co/ishereduolingo@gmail.com"
+    method="POST">
+        <label for=""fullName">Full Name:</label>
         <input type="text" id="fullName" name="fullName" required>
 
         <label for="age">Age:</label>
