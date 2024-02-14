@@ -38,6 +38,30 @@
             max-height: 35%;
         }
 
+        .lang-buttons {
+            text-align: right;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 3;
+        }
+
+        .lang-button {
+            background-color: #005197;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 14px;
+        }
+
+        .lang-button:hover {
+            background-color: #003865;
+        }
+
         section {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -109,6 +133,14 @@
     <nav>
       <img src="./ATA_files/Official flag of The Hesperian Empire. Number 2 - Copy.png" alt="Centered Image">
     </nav>
+
+    <div class="lang-buttons">
+        <form action="./timesofhesperia" onclick="loadPage(event)" style="display: inline;">
+            <button type="submit" class="lang-button">EN</button>
+        </form>
+        <form action="https://reinodehesperia.com/TiemposDeHesperia" onclick="loadPage(event)" style="display: inline;">
+            <button type="submit" class="lang-button">ES</button>
+        </form>
 
     <section>
         <article>
