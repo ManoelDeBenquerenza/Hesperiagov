@@ -50,6 +50,30 @@
             cursor: pointer;
         }
 
+          .lang-buttons {
+            text-align: right;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 3;
+        }
+
+        .lang-button {
+            background-color: #005197;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-size: 14px;
+        }
+
+        .lang-button:hover {
+            background-color: #003865;
+        }
+
         #empire-flag {
             width: 500px;
             height: auto;
@@ -119,6 +143,12 @@
   <header>
       <img src="./ATA_files/eaglefullportugalhesperia.png" alt="Header Image">
   </header>
+
+    <div class="lang-buttons">
+        <form action="https://reinodehesperia.com/territories" onclick="loadPage(event)" style="display: inline;">
+            <button type="submit" class="lang-button">EN</button>
+        </form>
+    </div>
 
   <nav>
       <a href="https://reinodehesperia.com/" onclick="loadPage(event)">Inicio</a>
